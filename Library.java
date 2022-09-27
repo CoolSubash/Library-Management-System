@@ -45,7 +45,12 @@ Librarymanagement(){
         int bookadd=number.nextInt();
         totalbook=initialnoofbooks+bookadd;
         for(int i=initialnoofbooks;i<totalbook;i++){
-            String addbook=number.next();
+             System.out.println("Enter a Book");
+            addbook=number.nextLine();
+            if(addbook.length() ==0){
+                addbook=number.nextLine();
+
+            }
             this.books[i]=addbook;
 
 
